@@ -4,10 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
+import { MenuComponent } from './layout/menu/menu.component';
+import { ContactsModule } from './contacts/contacts.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutModule],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    LayoutModule,
+    LayoutModule,
+    ContactsModule,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

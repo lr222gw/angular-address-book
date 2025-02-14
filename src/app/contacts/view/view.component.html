@@ -1,0 +1,13 @@
+<div *ngIf="contact; else error">
+    <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+
+    <p>City: {{ contact.city }}</p>
+    <p>Street: {{ contact.street }}</p>
+  
+    <button routerLink="/contacts">Back to List</button>
+  </div>
+  
+  <ng-template #error>
+    <p>No user with that ID ...</p>
+  </ng-template>
+  
